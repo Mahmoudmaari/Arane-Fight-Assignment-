@@ -28,41 +28,37 @@ public class App {
      do{
     	 int Bpower =attack.RNG(2, 5) ;
          int  Upower =attack.RNG(3, 5);
+         System.out.println("Round number is : "+roundnum);
+         System.out.println(botAplayer.getPlayername()+" Health : "+Uhealth+"   "+botAplayer.getBotname()+" Health : "+Bhealth);
+         System.out.println();
          System.out.println(botAplayer.getPlayername()+" Attak : "+Upower+"   "+botAplayer.getBotname()+" Attak : "+Bpower);
+         System.out.println();
          System.out.println("************************************");
 	 result = Add_To_Array.AddTooAarray(result,  Uhealth -= Bpower);
      result1 = Add_To_Array.AddTooAarray(result1,Bhealth -= Upower );
     	 
-	 if ( Upower <=Bhealth || Bhealth >=0) {
+	 if ( Upower <=Bhealth && Bhealth >=0) {
 	      
 		    
-		    System.out.println(botAplayer.getBotname()+" Health is"+result1[roundnum-1]);
+
 		    System.out.println();
 		    winattack=false;
 			alive=true;
-			
+			again=false;
 		}if (Bhealth <=0) {
-			
-		    
-			System.out.println(botAplayer.getBotname()+" Health is"+result1[roundnum-1]);
+			 int nr=roundnum;
 			  Uhealth += Bpower;
 			System.out.println();
-			System.out.println(botAplayer.getPlayername()+" Health is: "+Uhealth);
+			System.out.println("Round number is : "+(nr+1));
+			System.out.println();
+			System.out.println(botAplayer.getPlayername()+" Health : "+Uhealth+"   "+botAplayer.getBotname()+" Health : "+Bhealth);
 			System.out.println();
 			System.out.println("==========You Win==========");
 			alive = false;
 			again = true;
 			winattack=true;
 			
-		}if (winattack==false) {
-			
-	      if (Bpower <=Uhealth) {
-	    	  
-	        System.out.println("Your health is "+result[roundnum-1]);
-	        System.out.println();
-		    alive=true;
-		    again=false;
-	}
+	
 	    }if (winattack==true) {
 		
 			alive =false;
