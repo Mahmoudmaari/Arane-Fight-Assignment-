@@ -1,19 +1,21 @@
-package maari.mahmoud.arena_fighter;
+package maari.mahmoud.arena_fighter.dao;
 
 import java.util.Scanner;
 
 import maari.mahmoud.RNG.RNG1;
-import maari.mahmoud.arena_fighter_models.Armor;
+import maari.mahmoud.arena_fighter.Add_To_Array;
+import maari.mahmoud.arena_fighter.Bot_user_Character;
+import maari.mahmoud.arena_fighter.Play_again;
+import maari.mahmoud.arena_fighter.Random_Names;
 import maari.mahmoud.arena_fighter_models.Shop;
-import maari.mahmoud.arena_fighter_models.Swords;
 
-public class App {
-
+public class BattleAndRound {
 	static Scanner buy = new Scanner(System.in);
 
 	static Shop m = new Shop();
 
-	public static void main(String[] args) {
+	
+	public void Attak() {
 		int result[] = new int[0];
 		int result1[] = new int[0];
 		int Bhealth = 50;
@@ -133,5 +135,6 @@ public class App {
 		return in.nextLine();
 
 	}
+	}
 
-}
+
