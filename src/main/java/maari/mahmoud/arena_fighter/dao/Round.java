@@ -5,8 +5,8 @@ import java.util.Scanner;
 import maari.mahmoud.RNG.RNG1;
 import maari.mahmoud.arena_fighter.Play_again;
 import maari.mahmoud.arena_fighter.Random_Names;
-import maari.mahmoud.arena_fighter_models.BotCharacter;
-import maari.mahmoud.arena_fighter_models.UserCharacter;
+import maari.mahmoud.arena_fighter.models.BotCharacter;
+import maari.mahmoud.arena_fighter.models.UserCharacter;
 
 public class Round {
 	Scanner in = new Scanner(System.in);

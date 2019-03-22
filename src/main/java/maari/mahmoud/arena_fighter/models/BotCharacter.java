@@ -1,4 +1,4 @@
-package maari.mahmoud.arena_fighter_models;
+package maari.mahmoud.arena_fighter.models;
 
 
 
